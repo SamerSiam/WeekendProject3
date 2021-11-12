@@ -1,0 +1,1 @@
+Number of People left at the last station= ${total}`);
