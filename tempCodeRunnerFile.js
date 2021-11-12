@@ -1,1 +1,2 @@
-Number of People left at the last station= ${total}`);
+ //         // console.log(newStr);
+    //       //  newStr[i+1].replace(newStr.c
