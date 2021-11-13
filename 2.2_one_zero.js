@@ -1,6 +1,6 @@
 
 const sampleArray=[1,0,1,0,1,0,1,0,1,0];
-// console.log (sampleArray.length);
+
 
 const binaryToInt= (arr)=>
 {
