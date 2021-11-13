@@ -8,7 +8,6 @@ const sumOfLowestvalues= (arr)=>
     console.log(sorted);
     sum= sorted[0]+ sorted[1];
     return sum;
-
     
 }
 
