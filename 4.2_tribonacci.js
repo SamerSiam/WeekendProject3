@@ -1,11 +1,25 @@
+/**
+ * @param {array} signature 
+ * @param {number} n 
+ * @returns {arrays}
+ */
+
 const tribonacci=(signature,n)=>
 {
     const fibArr=[];
+        if (n===0)
+         {
+        return fibArr;
+        }
+        if (n< 4)
+        {
+            return signature.slice(0,n) ;
+        }
         //populate the first items of the fibonacci sequence
-    for (let x=0; x<signature.length;x++)
-    {   
-        fibArr[x]=signature[x];
-    }
+        for (let x=0; x<signature.length;x++)
+        {   
+            fibArr[x]=signature[x];
+        }
     
     for (let i=3; i<=n;i++)
     {
@@ -14,7 +28,6 @@ const tribonacci=(signature,n)=>
         let nMinus3=fibArr[i-3];
         fibArr[i]= nMinus1+ nMinus2 +nMinus3;
     }
-    return fibArr[n];
+    return fibArr;
 }
-
-console.log (tribonacci([1,1,1],5));
+console.log (tribonacci([1,1,1],2));
